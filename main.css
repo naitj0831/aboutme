@@ -1,0 +1,288 @@
+/* *{
+    border: 2px green dashed;
+    margin: 0px;
+    padding: 0px;
+} */
+
+
+/* body{
+    background-color: lightgray;
+    font-family: 'Montserrat', sans-serif;
+    min-width: 100%;
+} */
+
+/* .container{ */
+    /* margin-right: 3em; */
+    /* min-width: 100%; */
+    /* width: 100% */
+    /* height: 100vh;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "icon"
+        "nav"
+        "content"
+        "footer";
+} */
+
+/* Name your sections */
+/* sections on the about me page */
+/* .icon,
+nav,
+.container,
+footer{
+    padding-left: 3em;
+    padding-right: 3em;
+    text-align: center;
+} */
+
+/* .icon svg{
+    width: 40%;
+} */
+
+/* svg{
+    transform: scale(.45);
+} */
+
+/* li{
+    display: inline;
+    padding: 25px;
+    font-size: 2em;
+} */
+
+/* nav bar style */
+
+/* nav{
+    margin-left: 2em;
+    grid-area: nav;
+    justify-content: center;
+    text-align: center;
+    padding-left: 4em;
+    padding-right: 4em;
+} */
+
+/* nav ul{
+    list-style: none;
+} */
+
+/* a:link{
+    text-decoration: none;
+} */
+
+/* a:visited{
+    text-decoration: none;
+} */
+
+/* a:hover{
+    text-decoration: underline;
+} */
+
+/* a:active{
+    text-decoration: underline;
+} */
+
+
+*{
+    /* border:2px green dashed; */
+    margin:0px;
+    padding:0px; 
+  }
+  
+  body{
+      background-color: lightgray;
+      font-family: 'Montserrat', sans-serif;
+      min-width:100%;
+  }
+  
+  /* contains everything on the page */
+  .container{
+    /* margin-right:3em; */
+    min-width:100%;
+    /* width:100%; */
+    height:100vh;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+          "icon"
+          "nav"
+          "img"
+          "content"
+          "footer";
+  }
+  
+  /* name your sections */
+  /* the sections for my about me page */
+  .icon,
+   nav,
+   img,
+   .content,
+   footer{
+     padding-left: 3em;
+     padding-right: 3em;
+     text-align: center;
+  }
+  
+  .icon svg {
+    width:40%;
+  }
+  
+  /* navigation bar styling */
+  
+  nav{
+    /* margin-left:2em; */
+    grid-area:nav;
+    justify-content: center;
+    text-align:center;
+    padding-left:4em;
+    padding-right: 4em;
+    background-color:rgb(141, 12, 12);
+    height: 150px;
+  }
+  nav ul {
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  nav li{
+    padding: 1em 0;
+    list-style-type: none;
+    padding: 25px;
+    font-size: 1.7em;
+  }
+  
+  nav li a {
+    color: black;
+    font-weight: 400;
+    opacity: 1;
+    text-decoration: none;
+    transition: .3s;
+  }
+  
+  nav li a:hover {
+    color:gray;
+    opacity: 1;
+    text-decoration: none;
+  }
+  
+  
+  /* a:link {
+      text-decoration: none;
+    } */
+    
+  a:visited {
+      text-decoration: none;
+    }
+  
+  /* content section */
+  .content{
+    grid-area:content;
+    max-width:600px;
+    margin: 0 auto;
+    text-align: center;
+    }
+  
+  .content img{
+    
+    width: 20%;
+    border-radius: 8%;
+    margin-bottom: 4em;
+    scale: 50%;
+    
+  }
+  
+  .content p{
+    text-align: left;
+    font-size:1em;
+    line-height: 1.5rem;
+  }
+  .paragraph2{
+    text-indent: 2em;
+  }
+  /* the span tag that wrap starts off my paragraph */
+  .bigText {
+    font-size:2em;
+    padding-right:.5em;
+  }
+  footer{
+    grid-area:footer;
+  }
+  footer p{
+    font-size:2em;
+  }
+  
+  footer li {
+    display:inline;
+  }
+  
+  footer ul {
+    max-width: 640px;
+    margin: 2em auto;
+    padding:0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  footer ul li{
+    list-style: none;
+    align-self:flex-end;
+  }
+  footer ul li a {
+    text-decoration:none;
+    color: rgb(141, 12, 12);
+    opacity:1;
+    transition: .3s;
+  }
+  footer ul li a:hover {
+    text-decoration:none;
+    color:gray;
+  }
+  
+  footer svg {
+    width:20%;
+  }
+  
+  footer p{
+    font-size: 1em;
+  }
+  /* grid system for desktop */
+  @media (min-width:1040px){
+    .container{
+      width:100%;
+      height:100vh;
+      display:grid;
+      grid-template-columns: 300px 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+            "icon nav nav"
+            "icon content content"
+            "icon content content"
+            "icon content content"
+            "img content content"
+            "img content content"
+            "footer footer footer";
+    }
+    
+    
+      nav ul{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 45px;
+        flex-direction: row;
+      }
+      .icon svg {
+        width: 100%;
+        padding-left:20px;
+      }
+      .content img{
+          width: 100%;
+      }
+  
+    
+  
+  }
+
+
